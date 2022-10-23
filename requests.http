@@ -3,3 +3,14 @@ GET http://localhost:3000/jobs
 ###
 
 GET http://localhost:3000/jobs/1
+
+###
+
+POST http://localhost:3000/jobs
+Content-Type: application/json
+
+{
+  "title": "Dog Walker",
+  "pay": 20000
+}
+###

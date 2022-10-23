@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   get "/jobs" => "jobs#index"
   get "/jobs/:id" => "jobs#show"
+  post "/jobs" => "jobs#create"
 end

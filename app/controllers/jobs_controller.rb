@@ -11,4 +11,13 @@ class JobsController < ApplicationController
 
   end
 
+  def create
+    job = Job.new
+    job.title = params[:title]
+    job.pay = params[:pay]
+    job.save
+    render json: job.as_json
+
+  end
+
 end
