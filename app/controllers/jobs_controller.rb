@@ -5,6 +5,10 @@ class JobsController < ApplicationController
 
   end
 
+  def show
+    job = Job.find_by(id: params[:id])
+    render json: job.as_json
 
+  end
 
 end
