@@ -14,3 +14,11 @@ Content-Type: application/json
   "pay": 20000
 }
 ###
+
+PATCH http://localhost:3000/jobs/3
+Content-Type: application/json
+
+{
+  "title": "Doggy Walker",
+  "pay": 20000
+}

@@ -20,4 +20,14 @@ class JobsController < ApplicationController
 
   end
 
+  def update
+    job = Job.find_by(id: params[:id])
+    job.title = params[:title] || job.title
+    job.pay = params[:pay] || job.pay
+    job.save
+    render json: job.as_json
+
+
+  end
+
 end
