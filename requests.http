@@ -22,3 +22,7 @@ Content-Type: application/json
   "title": "Doggy Walker",
   "pay": 20000
 }
+
+###
+
+DELETE http://localhost:3000/jobs/3
